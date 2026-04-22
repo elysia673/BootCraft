@@ -1,6 +1,6 @@
-# USB Ubuntu Deploy
+# BootCraft 
 
-一个用于将 Ubuntu 系统部署到 U 盘并实现自动初始化的工具。
+一个用于将 定制 系统部署到 U 盘并实现自动初始化的工具。
 
 ---
 
