@@ -1,0 +1,3 @@
+DEVICE=/dev/sdX
+ROOTFS=ubuntu-rootfs.tar.gz
+EFI_IMG=ubuntu-efi.img
