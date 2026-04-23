@@ -91,6 +91,9 @@ DATA_PART="${DEV}2"
 log "格式化 EFI 分区"
 mkfs.fat -F 32 "$BOOT_PART" || quit "格式化失败"
 
+log "设置 EFI 分区标签"
+fatlabel "$BOOT_PART" ARCH2005 || quit "设置标签失败"
+
 log "格式化 DATA 分区"
 mkfs.ext4 -F "$DATA_PART" || quit "格式化失败"
 
