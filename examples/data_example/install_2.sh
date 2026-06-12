@@ -26,9 +26,11 @@ case "$ARCH" in
         ;;
 esac
 
-/usr/sbin/grub-install --target="$TARGET" --bootloader-id=GRUB --efi-directory=/boot/efi
+/usr/sbin/grub-install --target="$TARGET" --bootloader-id=ubuntu --efi-directory=/boot/efi
 
-/usr/sbin/grub-mkconfig -o /boot/grub/grub.cfg
+#/usr/sbin/grub-mkconfig -o /boot/grub/grub.cfg
+update-grub
+
 
 umount /boot/efi
 exit 0
