@@ -2,6 +2,8 @@
 
 DEV="$1"
 
+export PATH=$PATH:/usr/sbin
+
 if [ -z "$DEV" ]; then
     echo "用法: $0 /dev/sdX1  (EFI 分区设备)"
     exit 1
