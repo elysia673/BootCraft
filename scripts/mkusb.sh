@@ -1,6 +1,6 @@
 #!/bin/sh
 
-set -eu
+set -e
 
 # ===== 基础 =====
 LOCAL="$(mktemp -d)"
