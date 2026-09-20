@@ -60,7 +60,7 @@ cp install_2.sh /tmproot/bin/install_2.sh
 chmod a+x /tmproot/bin/install_2.sh
 
 echo ============== arch-chroot /install_2.sh ${boot_part} ===============
-arch-chroot /tmproot /install_2.sh ${boot_part}
+arch-chroot /tmproot /bin/install_2.sh ${boot_part}
 
 rm -f /tmproot/bin/install_2.sh
 
